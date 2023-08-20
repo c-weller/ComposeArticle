@@ -33,7 +33,11 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Titel(titel = stringResource(R.string.titel))
+                    ComposeArticle(
+                        stringResource(R.string.paragraph2),
+                        stringResource(R.string.paragraph1),
+                        stringResource(R.string.titel)
+                    )
                 }
             }
         }
@@ -94,6 +98,6 @@ fun ComposeArticle (
 @Composable
 fun Preview() {
     ComposeArticleTheme {
-        ComposeArticle(stringResource(R.string.paragraph2), stringResource(R.string.paragraph1), stringResource(R.string.titel),)
+        ComposeArticle(stringResource(R.string.paragraph2), stringResource(R.string.paragraph1), stringResource(R.string.titel))
     }
 }
